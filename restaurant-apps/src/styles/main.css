@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: rgb(243 244 246);
+    height: 1200px;
+    color: black;
+}
+
+
+/* navbar */
+span{
+  color: #EAF000;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(96 165 250);
+    box-shadow:0px 2px 3px rgb(65, 113, 170);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    height: 44px;
+}
+
+.navbar .navbar-nav a {
+    color:white;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    font-weight: bold;
+    height: 44px;
+    padding-top: 5%;
+}
+
+.navbar .navbar-nav a:hover{
+    color: rgb(31, 41, 55);
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(31, 41, 55);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.7);
+}
+
+
+.navbar .navbar-extra a{
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+    color: rgb(96 165 250);
+}
+
+#menu-lainnya{
+    display: none;
+    height: 44px;
+    width:44px;
+}
+
+
+
+.hero{
+    min-height: 500px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-image: url(/src/public/images/heros/hero.jpg);
+    background-position: center;
+    background-color: black;
+}
+
+.hero_inner{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.hero_title{
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.hero_tag{
+    color: #fff;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+.content {
+     padding: 32px;
+}
+
+.content-list{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.content-list h1 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.list{
+    margin: 32px auto auto;
+    text-align: left;
+    display: grid;
+    grid-row-gap: 16px;
+}
+
+.list_item{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.city {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    border-radius: 5px;
+    background-color: rgb(96 165 250);
+    padding: 5px 10px 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.list_item_content{
+    padding: 16px;
+    display: inline-block;
+}
+
+.list_item_thumb{
+    width: 100%;
+    max-height: 200px;
+}
+
+.list_item_rating {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.list_item_rating_value{
+    color: red;
+    text-decoration: none;
+    font-size: 40px;
+    padding-right:2rem;
+}
+
+.list_item_title{
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s opacity;
+}
+
+.list_item_title:hover{
+    opacity: 0.5;
+}
+
+.list_item_title a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+    padding-bottom: 11px;
+}
+
+.list_item_desc {
+    margin-top: -30px;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+
+footer{
+    background-color: rgb(96 165 250);
+}
+.fot{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+
+.skip-link{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background-color: rgb(6, 40, 63);
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 10000;
+    text-decoration: none;
+}
+
+
+.skip-link:focus{
+    top: 100px;
+}
+
+#mcon{
+    text-align: centers;
+}
